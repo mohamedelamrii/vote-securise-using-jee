@@ -46,7 +46,7 @@ public class CoServlet extends HttpServlet {
 		ReceiveMail r = new ReceiveMail();
 		Security sec = new Security();
 		r.receive("imap.gmail.com", "comptagecentre@gmail.com", "tshjfngapjflrotz",
-				"C:\\Users\\MyPC\\OneDrive\\Bureau\\Vote_Securise\\messages\\co\\", 2);
+				"C:\\Users\\MyPC\\OneDrive\\Bureau\\Vote_Securise\\messages\\co\\", 2);//mettre ici votre chemin vers le dossier messages
 		System.out.println("centre de comptage a recu les deux messages  avec succés .");
 		sec.decrypteFile("co/I_CO", "CentreCo__SECRETKey.asc", "co/output.txt");
 		System.out.println("Le centre de comptage dichiffré le message 1 avec succés .");
